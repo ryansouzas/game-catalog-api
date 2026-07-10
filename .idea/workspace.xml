@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e3b99a-ac7c-4ec9-940c-881f79402d17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/dto/GameDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/services/exceptions/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/controllers/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/controllers/GameListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/dto/GameListDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/projections/GameMinProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/repository/GameListRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/services/GameListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/dto/GameMinDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/dto/GameMinDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/repository/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/repository/GameRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/ryansouzas/gamecatalog/services/GameService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -55,6 +60,12 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ryansouzas.gamecatalog.controllers" />
+      <recent name="com.ryansouzas.gamecatalog.services" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GamecatalogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ryansouzas.gamecatalog.GamecatalogApplication" />

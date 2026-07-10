@@ -3,6 +3,7 @@ package com.ryansouzas.gamecatalog.services;
 import com.ryansouzas.gamecatalog.dto.GameDTO;
 import com.ryansouzas.gamecatalog.dto.GameMinDTO;
 import com.ryansouzas.gamecatalog.entities.Game;
+import com.ryansouzas.gamecatalog.projections.GameMinProjection;
 import com.ryansouzas.gamecatalog.repository.GameRepository;
 import com.ryansouzas.gamecatalog.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,11 @@ public class GameService {
         Game entity = repository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Game not found"));
         return new GameDTO(entity);
+    }
+
+    @Transactional(readOnly = true)
+    public List<GameMinDTO> findByList(Long listId){
+        List<GameMinProjection> list = repository.searchByList(listId);
+        return list.stream().map(GameMinDTO::new).toList();
     }
 }
